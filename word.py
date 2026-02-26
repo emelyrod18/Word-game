@@ -1,7 +1,7 @@
 import random
 
 words = [
-    "bubblegum", "undertale", "roblox", "butterfly", "yourself", "python", "cheese", "sourdough"
+    "bubblegum", "undertale", "roblox", "butterfly", "yourself", "python", "cheese", "sourdough",
     "nine", "clock", "flan", "alliteration", "mickey", "fortnite", "hacker"
 ]
 
@@ -15,14 +15,19 @@ print("word game!!")
 
 for i in range(total):
     print("word", i + 1, "of", total)
-    print("type this word:", words(i))
+    print("type this word:", words[i])
 
-answer = input()
+    answer = input()
 
-if answer == words(i):
-    print("correct!")
-    correct = correct + 1
-else:
-    print("incorrect")
-    mistakes = mistakes + 1
+    if answer == words[i]:
+        print("correct!")
+        correct = correct + 1
+    else:
+        print("incorrect")
+        mistakes = mistakes + 1
     
+print("game overrr")
+print("mistakes:", mistakes)
+
+accuracy = (correct / total) * 100
+print("accuracy:", accuracy, "%")
