@@ -16,3 +16,13 @@ print("word game!!")
 for i in range(total):
     print("word", i + 1, "of", total)
     print("type this word:", words(i))
+
+answer = input()
+
+if answer == words(i):
+    print("correct!")
+    correct = correct + 1
+else:
+    print("incorrect")
+    mistakes = mistakes + 1
+    
